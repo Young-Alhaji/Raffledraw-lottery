@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Raffledraw</title>
+	<style type="text/css">
+		body{
+			background-color: black;
+			color: white;
+			font-family: sans-serif;
+		}
+
+		table,tr,td{
+			border: 2px solid;}
+			tr,td{
+				width: 33px;
+			}
+		.grade{
+			border: 4px solid grey ;
+			background-color: white;
+			width: 90px;
+			height: 30px;
+			border-radius: 20px;
+			margin: auto;
+			color: black;
+			font-weight: bolder;
+			font-size: 140%;
+			text-align: center;
+
+
+
+		}
+		.centertext{
+			text-align: center;
+		}
+		.bluetext{
+			color: blue;
+		}
+		.redtext{
+			color:red;
+		}
+		.greentext{
+			color:green;
+		}
+		.yellowtext{
+			color: yellow;
+		}
+		button{
+			width: 35px;
+			height: 30px;
+		}
+		button.whitenumber{
+			color: white;
+			background-color: black;
+		}
+		button.blacknumber{
+			color: black;
+			background-color: white;
+		}
+		h1{
+			text-align: center;
+			color: rgb(50,350,30);
+			font-size: 230%;
+		}
+		.mediumsize{
+			font-size: 140%
+		}
+		.l{
+			margin: auto;
+			font-weight: bolder;
+		}
+		.declarationdiv{
+			color: red;
+			background-color: white;
+			width: 480px;
+			height: 40px;
+			font-weight: bolder;
+			font-family: cursive;
+			margin: auto;
+			font-size: 150%;		
+		}
+		button.play{
+			width: 150px;
+			height: 35px;
+			font-family: cursive;
+			font-weight: bolder;
+			font-size: 120%;
+		}
+		.las{
+			height: 30px; width: 100px; font-size: 150%; font-weight: bold;
+		}
+
+
+	</style>
+</head>
+<body>
+	<h1>
+		Raffle Draw
+	</h1>
+	<div class="centertext">
+
+		<div></div>
+		<div class="mediumsize">Choose your Lucky number <br> And <br> Stand A Chance To Hit Jackpot... <br> <br></div>
+		<div>
+			<table class="mediumsize l" >
+				<tr class="blacknumber">
+					<td><button id="btn" onclick="numbers()" class="whitenumber">1</button></td>
+					<td><button id="btn" onclick="numbers()">2</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">3</button></td>
+					<td><button id="btn" onclick="numbers()">4</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">5</button></td>
+					<td><button id="btn" onclick="numbers()">6</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">7</button></td>
+					<td><button id="btn" onclick="numbers()">8</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">9</button></td>
+					<td><button id="btn" onclick="numbers()">10</button></td>
+
+				</tr>
+
+				<tr class="whitenumber">
+					<td><button id="btn" onclick="numbers()" >11</button></td>
+					<td><button id="btn" onclick="numbers()"  class="whitenumber">12</button></td>
+					<td><button id="btn" onclick="numbers()" >13</button></td>
+					<td><button id="btn" onclick="numbers()"  class="whitenumber">14</button></td>
+					<td><button id="btn" onclick="numbers()">15</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">16</button></td>
+					<td><button id="btn" onclick="numbers()" >17</button></td>
+					<td><button id="btn" onclick="numbers()"  class="whitenumber">18</button></td>
+					<td><button id="btn" onclick="numbers()" >19</button></td>
+					<td><button id="btn" onclick="numbers()"  class="whitenumber">20</button></td>
+				</tr>
+
+				<tr class="blacknumber">
+					<td><button id="btn" onclick="numbers()" class="whitenumber">21</button></td>
+					<td><button id="btn" onclick="numbers()">22</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">23</button></td>
+					<td><button id="btn" onclick="numbers()">24</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">25</button></td>
+					<td><button id="btn" onclick="numbers()">26</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">27</button></td>
+					<td><button id="btn" onclick="numbers()">28</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">29</button></td>
+					<td><button id="btn" onclick="numbers()">30</button></td>
+				</tr>
+
+				<tr class="whitenumber">
+					<td><button id="btn" onclick="numbers()">31</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">32</button></td>
+					<td><button id="btn" onclick="numbers()">33</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">34</button></td>
+					<td><button id="btn" onclick="numbers()">35</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">36</button></td>
+					<td><button id="btn" onclick="numbers()">37</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">38</button></td>
+					<td><button id="btn" onclick="numbers()">39</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">40</button></td>
+				</tr>
+
+				<tr class="blacknumber">
+					<td><button id="btn" onclick="numbers()" class="whitenumber">41</button></td>
+					<td><button id="btn" onclick="numbers()">42</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">43</button></td>
+					<td><button id="btn" onclick="numbers()">44</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">45</button></td>
+					<td><button id="btn" onclick="numbers()">46</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">47</button></td>
+					<td><button id="btn" onclick="numbers()">48</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">49</button></td>
+					<td><button id="btn" onclick="numbers()">50</button></td>
+				</tr>
+
+				<tr class="whitenumber">
+					<td><button id="btn" onclick="numbers()">51</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">52</button></td>
+					<td><button id="btn" onclick="numbers()">53</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">54</button></td>
+					<td><button id="btn" onclick="numbers()">55</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">56</button></td>
+					<td><button id="btn" onclick="numbers()">57</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">58</button></td>
+					<td><button id="btn" onclick="numbers()">59</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">60</button></td>
+				</tr>
+
+				<tr class="blacknumber">
+					<td><button  id="btn" onclick="numbers()"class="whitenumber">61</button></td>
+					<td><button id="btn" onclick="numbers()">62</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">63</button></td>
+					<td><button id="btn" onclick="numbers()">64</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">65</button></td>
+					<td><button id="btn" onclick="numbers()">66</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">67</button></td>
+					<td><button id="btn" onclick="numbers()">68</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">69</button></td>
+					<td><button id="btn" onclick="numbers()">70</button></td>
+				</tr>
+
+				<tr class="whitenumber">
+					<td><button id="btn" onclick="numbers()">71</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">72</button></td>
+					<td><button id="btn" onclick="numbers()">73</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">74</button></td>
+					<td><button id="btn" onclick="numbers()">75</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">76</button></td>
+					<td><button id="btn" onclick="numbers()">77</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">78</button></td>
+					<td><button id="btn" onclick="numbers()">79</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">80</button></td>
+				</tr>
+
+				<tr class="bluetext">
+					<td><button id="btn" onclick="numbers()" class="whitenumber">81</button></td>
+					<td><button id="btn" onclick="numbers()">82</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">83</button></td>
+					<td><button id="btn" onclick="numbers()">84</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">85</button></td>
+					<td><button id="btn" onclick="numbers()">86</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">87</button></td>
+					<td><button id="btn" onclick="numbers()">88</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">89</button></td>
+					<td><button id="btn" onclick="numbers()">90</button></td>
+				</tr>
+
+				<tr class="yellowtext">
+					<td><button id="btn" onclick="numbers()">91</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">92</button></td>
+					<td><button id="btn" onclick="numbers()">93</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">94</button></td>
+					<td><button id="btn" onclick="numbers()">95</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">96</button></td>
+					<td><button id="btn" onclick="numbers()">97</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">98</button></td>
+					<td><button id="btn" onclick="numbers()"> 99</button></td>
+					<td><button id="btn" onclick="numbers()" class="whitenumber">100</button></td>
+				</tr>
+		<table>
+		</div> 
+	</div> <br>
+
+	Input your lucky number below..
+
+	<div>
+		<input class="las" placeholder="Choose" type="number" min="1" step="1" max="100" id="num" name="">
+		<button class="play" onclick="play()" >Play Number</button>
+	</div> <br>
+
+
+
+	<div id="dd1" class="declarationdiv"></div> <br>
+	<div id="dd2" class="declarationdiv"></div> <br>
+	<script type="text/javascript">	
+		function play(){
+			
+
+			var numbe =num.value
+			var mathround=Math.ceil(Math.random()*100)
+			dd1.innerText=("Today's lucky number is "+ mathround)
+
+
+			 if(numbe>100){
+					dd1.innerText=("Lucky Number is between 1 and 100")
+					dd2.innerText=('Please Choose a valid Number')
+				}
+			else if(numbe==mathround){
+				dd2.innerText=("Congratulatons,you hit jackpot")}
+				else {
+					dd2.innerText=('Oops,You lost..Stake Again')
+				}		
+		}
+	</script>
+</body>
+</html>
